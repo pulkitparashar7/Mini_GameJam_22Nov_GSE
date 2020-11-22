@@ -65,3 +65,9 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+GSE_Project/GSE Mini Game Jam project/Library/*
+GSE_Project/GSE Mini Game Jam project/Temp/*
+*.log
+
+*.cache
+GSE_Project/GSE Mini Game Jam project/Library/StateCache/Hierarchy/77df43-mainStage.json
