@@ -7,16 +7,16 @@ public class Gun : MonoBehaviour
     uint AmmoCount;
 
     [SerializeField]
-    MedicineDispenser NearbyDispenser;
+    MedicineDispenser NearbyDispenser = null;
 
     [SerializeField]
-    GameObject EquippedMedicine;
+    GameObject EquippedMedicine = null;
 
     [SerializeField]
-    float BulletSpeed;
+    float BulletSpeed = 300;
 
     [SerializeField]
-    Transform Doc;
+    Transform Doc = null;
 
     // Start is called before the first frame update
     void Start()

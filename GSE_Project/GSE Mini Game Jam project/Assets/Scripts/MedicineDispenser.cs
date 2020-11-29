@@ -5,10 +5,10 @@ using UnityEngine;
 public class MedicineDispenser : MonoBehaviour
 {
 	[SerializeField]
-	uint AmmoCount;
+	uint AmmoCount = 5;
 
 	[SerializeField]
-	GameObject MedicineBulletType;
+	GameObject MedicineBulletType = null;
 
 	// Start is called before the first frame update
 	void Start()

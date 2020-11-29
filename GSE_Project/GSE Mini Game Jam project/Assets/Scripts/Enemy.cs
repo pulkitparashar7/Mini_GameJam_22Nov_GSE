@@ -49,4 +49,17 @@ public class Enemy : MonoBehaviour
     {
         
     }
+    public bool NotifyHitByBullet(MedicineBullet bullet)
+    {
+        if(bullet == null)
+        {
+            return false;
+        }
+        if(true /*(int)bullet.BulletType == (int)this.EnemyType*/)
+        {
+            Destroy(this.gameObject);
+            return true;
+        }
+        return false;
+    }
 }
