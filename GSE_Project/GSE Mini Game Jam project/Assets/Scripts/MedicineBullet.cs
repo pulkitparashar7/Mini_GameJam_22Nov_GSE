@@ -30,6 +30,7 @@ public class MedicineBullet : MonoBehaviour
     public void InitializeBullet(Transform trans)
     {
         this.transform.SetParent(trans);
+        transform.localScale = Vector3.one;
         this.GetComponent<Rigidbody2D>().velocity = trans.right * this.BulletSpeed;
     }
     void OnTriggerEnter2D(Collider2D hit)
