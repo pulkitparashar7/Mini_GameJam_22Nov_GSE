@@ -1,18 +1,42 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static GameManager instance;
+    public Canvas GameCanvas;
+    public Canvas EndCanvas;
+    public Text WinText;
+    public void Awake()
     {
-        
+        instance = this;
+    }
+    private void OnEnable()
+    {
+        GameCanvas.gameObject.SetActive(true);
+        EndCanvas.gameObject.SetActive(false);
+    }
+    
+    public void ShowEndScreen(string message)
+    {
+        WinText.text = message; 
+        GameCanvas.gameObject.SetActive(false);
+        EndCanvas.gameObject.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void RestartGame()
     {
-        
+        SceneManager.LoadScene("GameScene");
+    }
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

@@ -9,6 +9,7 @@ public class GameOver : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             Debug.LogError(collision.gameObject.tag);
+            GameManager.instance.ShowEndScreen("You Lost!! You got CORONA!!");
         }
         
     }

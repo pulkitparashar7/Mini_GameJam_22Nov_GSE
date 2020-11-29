@@ -9,11 +9,7 @@ public class LevelScript : MonoBehaviour
     Text TimerText;
     [SerializeField]
     float LevelDuration = 60;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
     // Update is called once per frame
     void Update()
@@ -23,6 +19,7 @@ public class LevelScript : MonoBehaviour
         if(this.LevelDuration <= 0)
         {
             this.LevelDuration = 0f;
+            GameManager.instance.ShowEndScreen("You Won!! You cured Corona!");
         }
     }
 

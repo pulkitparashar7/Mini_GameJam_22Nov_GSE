@@ -40,7 +40,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 200}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8752814028521220467
 CanvasRenderer:
@@ -121,7 +121,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 100, y: 100}
+  m_Size: {x: 120, y: 150}
   m_EdgeRadius: 0
 --- !u!50 &4236140817955918397
 Rigidbody2D:
@@ -177,8 +177,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MovementSpeed: 100
   rb: {fileID: 0}
-  medicine: {fileID: 0}
-  doc: {fileID: 0}
-  med1: {fileID: 0}
-  med2: {fileID: 0}
-  med3: {fileID: 0}

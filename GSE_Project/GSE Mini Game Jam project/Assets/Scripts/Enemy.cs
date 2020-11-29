@@ -25,10 +25,11 @@ public class Enemy : MonoBehaviour
 
     public void Initialize(EnemyType type, float speed)
     {
+        if (MyImage == null)
+            return;       
         EnemyType = type;
         MySpeed = speed;
         //InvokeRepeating("MoveEnemy", MovementDelay / 2, MovementDelay);
-
         switch(type)
         {
             case EnemyType.Green:
