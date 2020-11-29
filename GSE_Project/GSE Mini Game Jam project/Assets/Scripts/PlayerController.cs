@@ -15,7 +15,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("tick");
         if (Input.GetKey("w"))
         {
             this.Movement.ApplyMovement(new Vector2(0, 1));
