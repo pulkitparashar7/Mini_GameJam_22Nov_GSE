@@ -377,8 +377,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 186, y: -18.47}
-  m_SizeDelta: {x: 342.38403, y: 280.6784}
+  m_AnchoredPosition: {x: 186, y: 4.6}
+  m_SizeDelta: {x: 342.38403, y: 234.54279}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3266441105117117579
 CanvasRenderer:
@@ -407,7 +407,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Composer & SFX\nBenjamin Joseph Hanu\xDFek\r\n\r\nUI development & design\r\nTom
+  m_text: "Composer & SFX\nBenjamin Joseph Hanu\xDFek\r\n\r\nMenu development\nTom
     Tu\u010Dek\r\n\n<fill in later>\nMu'taz Alshaer\n\r\nSpecial thanks\nSebastian
     Kurz\r\nYou, the player"
   m_isRightToLeft: 0
