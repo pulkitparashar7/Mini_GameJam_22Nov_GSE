@@ -42,20 +42,5 @@ public class Movement : MonoBehaviour
         {
             rb.velocity = new Vector2(0, 0);
         }
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            clicked();
-        }
-
-    }
-
-    void clicked()
-    {
-        GameObject medThrow = Instantiate(medicine, doc.position, doc.rotation);
-        medThrow.transform.SetParent(doc);
-        medThrow.GetComponent<Rigidbody2D>().velocity = doc.right * 100f;
-    }
-
-    
+    }    
 }
