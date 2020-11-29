@@ -122,5 +122,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MedicineBulletBlue
       objectReference: {fileID: 0}
+    - target: {fileID: 3089627324862496887, guid: d5e5b339f05108b4ebe9090da1b65c3b,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5788612684594533586, guid: 21018871adbe36648b280136de8d64dc,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e5b339f05108b4ebe9090da1b65c3b, type: 3}

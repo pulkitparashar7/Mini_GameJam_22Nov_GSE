@@ -128,42 +128,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1986182931}
     m_Modifications:
-    - target: {fileID: -3223463131658895468, guid: 1c61e5a247aeee94f93d2afc0cdb8cdb,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: -3223463131658895468, guid: 1c61e5a247aeee94f93d2afc0cdb8cdb,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 7565642269966270773, guid: 1c61e5a247aeee94f93d2afc0cdb8cdb,
-        type: 3}
-      propertyPath: medicine
-      value: 
-      objectReference: {fileID: 3089627324862496777, guid: d5e5b339f05108b4ebe9090da1b65c3b,
-        type: 3}
-    - target: {fileID: 7565642269966270773, guid: 1c61e5a247aeee94f93d2afc0cdb8cdb,
-        type: 3}
-      propertyPath: doc
-      value: 
-      objectReference: {fileID: 236420574}
     - target: {fileID: 7565642269966270773, guid: 1c61e5a247aeee94f93d2afc0cdb8cdb,
         type: 3}
       propertyPath: med1
       value: 
       objectReference: {fileID: 667351770}
-    - target: {fileID: 7565642269966270773, guid: 1c61e5a247aeee94f93d2afc0cdb8cdb,
-        type: 3}
-      propertyPath: med2
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7565642269966270773, guid: 1c61e5a247aeee94f93d2afc0cdb8cdb,
-        type: 3}
-      propertyPath: med3
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 7565642269966270774, guid: 1c61e5a247aeee94f93d2afc0cdb8cdb,
         type: 3}
       propertyPath: m_Name
@@ -237,12 +206,12 @@ PrefabInstance:
     - target: {fileID: 7565642269966270775, guid: 1c61e5a247aeee94f93d2afc0cdb8cdb,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 7565642269966270775, guid: 1c61e5a247aeee94f93d2afc0cdb8cdb,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 7565642269966270775, guid: 1c61e5a247aeee94f93d2afc0cdb8cdb,
         type: 3}
@@ -274,53 +243,9 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 7565642269966270775, guid: 1c61e5a247aeee94f93d2afc0cdb8cdb,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7565642269966270775, guid: 1c61e5a247aeee94f93d2afc0cdb8cdb,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7565642269966270775, guid: 1c61e5a247aeee94f93d2afc0cdb8cdb,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1959563086, guid: 1c61e5a247aeee94f93d2afc0cdb8cdb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1c61e5a247aeee94f93d2afc0cdb8cdb, type: 3}
---- !u!1 &236420573
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 236420574}
-  m_Layer: 0
-  m_Name: Doc
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &236420574
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 236420573}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -45, y: -45, z: 0}
-  m_LocalScale: {x: 2.9187706, y: 2.9187706, z: 2.9187706}
-  m_Children: []
-  m_Father: {fileID: 705024782}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &288715255
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,12 +538,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1851261153055725391}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &705024782 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7565642269966270775, guid: 1c61e5a247aeee94f93d2afc0cdb8cdb,
-    type: 3}
-  m_PrefabInstance: {fileID: 52724294}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &872478497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -626,16 +545,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1986182931}
     m_Modifications:
-    - target: {fileID: 1851261153512730000, guid: 2dde1802f2a367443a27034b23644480,
+    - target: {fileID: 1851261153512730003, guid: 2dde1802f2a367443a27034b23644480,
         type: 3}
-      propertyPath: MedicineBulletType
+      propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1730474088801044108, guid: 42e02d9e91f02464eabf3dfd126cd4d1,
+      objectReference: {fileID: -1358886774773530980, guid: e6a2398a346d7b14ea41e32f4c7d66ed,
         type: 3}
     - target: {fileID: 1851261153512730003, guid: 2dde1802f2a367443a27034b23644480,
         type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 0.6117647
       objectReference: {fileID: 0}
     - target: {fileID: 1851261153512730003, guid: 2dde1802f2a367443a27034b23644480,
         type: 3}
@@ -645,7 +564,7 @@ PrefabInstance:
     - target: {fileID: 1851261153512730003, guid: 2dde1802f2a367443a27034b23644480,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.12756586
+      value: 0.64093757
       objectReference: {fileID: 0}
     - target: {fileID: 1851261153512730004, guid: 2dde1802f2a367443a27034b23644480,
         type: 3}
@@ -715,12 +634,12 @@ PrefabInstance:
     - target: {fileID: 1851261153512730004, guid: 2dde1802f2a367443a27034b23644480,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 1851261153512730004, guid: 2dde1802f2a367443a27034b23644480,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 1851261153512730004, guid: 2dde1802f2a367443a27034b23644480,
         type: 3}
@@ -862,21 +781,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1986182931}
     m_Modifications:
-    - target: {fileID: 1851261153512730000, guid: 2dde1802f2a367443a27034b23644480,
+    - target: {fileID: 1851261153512730003, guid: 2dde1802f2a367443a27034b23644480,
         type: 3}
-      propertyPath: MedicineBulletType
+      propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 8514804530125025083, guid: 7d9f00c177f723749a04301021e22659,
+      objectReference: {fileID: -2574144722887421611, guid: e6a2398a346d7b14ea41e32f4c7d66ed,
         type: 3}
     - target: {fileID: 1851261153512730003, guid: 2dde1802f2a367443a27034b23644480,
         type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1851261153512730003, guid: 2dde1802f2a367443a27034b23644480,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.07855177
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1851261153512730003, guid: 2dde1802f2a367443a27034b23644480,
         type: 3}
@@ -951,12 +870,12 @@ PrefabInstance:
     - target: {fileID: 1851261153512730004, guid: 2dde1802f2a367443a27034b23644480,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 1851261153512730004, guid: 2dde1802f2a367443a27034b23644480,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 1851261153512730004, guid: 2dde1802f2a367443a27034b23644480,
         type: 3}
@@ -1070,27 +989,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 100, y: 1100}
   m_EdgeRadius: 0
---- !u!1 &1959563085 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7565642269966270774, guid: 1c61e5a247aeee94f93d2afc0cdb8cdb,
-    type: 3}
-  m_PrefabInstance: {fileID: 52724294}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1959563086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1959563085}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b7d4da1e9b572a499036fea847776bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NearbyDispenser: {fileID: 0}
-  EquippedMedicine: {fileID: 0}
-  Doc: {fileID: 236420574}
 --- !u!224 &1986182931 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 682994287061019049, guid: e0457f71046e48d4984955ac3f96cab5,
@@ -1264,12 +1162,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1986182931}
     m_Modifications:
-    - target: {fileID: 1851261153512730000, guid: 2dde1802f2a367443a27034b23644480,
-        type: 3}
-      propertyPath: MedicineBulletType
-      value: 
-      objectReference: {fileID: 6306622496723555824, guid: 79ea440669aa5be4cb6a3c4d3748916a,
-        type: 3}
     - target: {fileID: 1851261153512730004, guid: 2dde1802f2a367443a27034b23644480,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1338,12 +1230,12 @@ PrefabInstance:
     - target: {fileID: 1851261153512730004, guid: 2dde1802f2a367443a27034b23644480,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 1851261153512730004, guid: 2dde1802f2a367443a27034b23644480,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 1851261153512730004, guid: 2dde1802f2a367443a27034b23644480,
         type: 3}
