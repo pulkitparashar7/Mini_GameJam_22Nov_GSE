@@ -6,6 +6,8 @@ public class SoundManager : MonoBehaviour
 {
     public AudioSource audioSource;
 
+    public static SoundManager instance;
+
     public AudioClip throw1;
     public AudioClip throw2;
     public AudioClip throw3;
@@ -17,64 +19,68 @@ public class SoundManager : MonoBehaviour
     public AudioClip wrong_patient;
     public AudioClip loadingscreen1;
 
-
-
-    public void Play_throw1()
+    private void Awake()
     {
-        audioSource.clip = ThrowSound_1;
+        instance = this;
+    }
+
+    public void Play_Throw1()
+    {
+        audioSource.clip = throw1;
         audioSource.Play();
     }
 
-    public void Play_throw2()
+    public void Play_Throw2()
     {
-        audioSource.clip = ThrowSound_2;
+        audioSource.clip = throw2;
         audioSource.Play();
     }
 
-    public void Play_throw3()
+    public void Play_Throw3()
     {
-        audioSource.clip = ThrowSound_3;
+        audioSource.clip = throw3;
         audioSource.Play();
     }
 
-    public void click1()
+    public void Play_Click()
     {
         audioSource.clip = click1;
         audioSource.Play();
     }
 
-    public void defeat()
+    public void Play_DefeatSound()
     {
         audioSource.clip = defeat;
         audioSource.Play();
     }
 
-    public void right_patient()
+    public void Play_Right_Patient()
     {
         audioSource.clip = right_patient;
         audioSource.Play();
     }
 
-    public void start_game()
+    public void Play_Start_Game()
     {
         audioSource.clip = start_game;
         audioSource.Play();
     }
 
-    public void victory()
+    public void Play_victory()
     {
         audioSource.clip = victory;
         audioSource.Play();
     }
 
-    public void wrong_patient()
+    public void Play_Wrong_Patient()
     {
         audioSource.clip = wrong_patient;
         audioSource.Play();
     }
 
-    public void loadingscreen1()
+    public void Play_LoadingScreen()
     {
         audioSource.clip = loadingscreen1;
         audioSource.Play();
     }
+}
