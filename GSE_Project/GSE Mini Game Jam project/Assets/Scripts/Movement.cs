@@ -24,7 +24,6 @@ public class Movement : MonoBehaviour
 
     public void ApplyMovement(Vector2 vec)
     {
-        Debug.Log("applymovement");
         this.rb.velocity = vec * this.MovementSpeed;
     }
 }

@@ -10,7 +10,10 @@ public class MainMenu : MonoBehaviour
     public Sprite[] Kurzes;
     public Button sunButton;
 
+    public AudioSource[] KurzSpeeches;
+
     private bool cooldown = false;
+    private bool fade = false;
 
     public void PlayGame()
     {
@@ -35,9 +38,21 @@ public class MainMenu : MonoBehaviour
             tempColor.a = 1f;
             sunButton.image.color = tempColor;
 
-            sunButton.image.sprite = Kurzes[Random.Range(0, Kurzes.Length-1)];
-            Invoke("ResetCooldown", 2.0f);
+            sunButton.image.sprite = Kurzes[Random.Range(0, Kurzes.Length)];
+
+            int randomSpeech = Random.Range(0, KurzSpeeches.Length);
+            KurzSpeeches[randomSpeech].PlayOneShot(KurzSpeeches[randomSpeech].clip, 1f);
+
+            Debug.Log("rnd speech:" + randomSpeech);
+
+            Invoke("ResetCooldown", 5.0f);
+            Invoke("FadeOutKurz", 2.0f);
         }
+    }
+
+    void FadeOutKurz()
+    {
+        fade = true;
     }
 
     void ResetCooldown()
@@ -48,4 +63,15 @@ public class MainMenu : MonoBehaviour
         cooldown = false;
     }
 
+    private void Update()
+    {
+        if(fade)    // fade out Kurz
+        {
+            var tempColor = sunButton.image.color;
+            tempColor.a -= 0.5f * Time.deltaTime;
+            sunButton.image.color = tempColor;
+            if (tempColor.a <= 0)
+                fade = false;
+        }
+    }
 }
