@@ -10,6 +10,8 @@ public class Enemy : MonoBehaviour
     public EnemyType EnemyType;
     public float MySpeed;
     public int NoPillNeeded = 1;
+    [SerializeField]
+    public float MoveSpeedMultiplier = 1f;
     public float MovementDelay;
     Image MyImage;
     RectTransform MyRectTransform;
@@ -30,8 +32,8 @@ public class Enemy : MonoBehaviour
             case EnemyType.Green:
                 MyImage.color = Color.green;
                 break;
-            case EnemyType.Yellow:
-                MyImage.color = Color.yellow;
+            case EnemyType.Blue:
+                MyImage.color = Color.blue;
                 break;
             case EnemyType.Red:
                 MyImage.color = Color.red;
@@ -55,11 +57,16 @@ public class Enemy : MonoBehaviour
         {
             return false;
         }
-        if(true /*(int)bullet.BulletType == (int)this.EnemyType*/)
+        if((int)bullet.BulletType == (int)this.EnemyType)
         {
             Destroy(this.gameObject);
             return true;
         }
-        return false;
+        else
+        {
+            this.MySpeed *= this.MoveSpeedMultiplier;
+            return true;
+        }
+        
     }
 }

@@ -13,9 +13,6 @@ public class Gun : MonoBehaviour
     GameObject EquippedMedicine = null;
 
     [SerializeField]
-    float BulletSpeed = 300;
-
-    [SerializeField]
     Transform Doc = null;
 
     // Start is called before the first frame update

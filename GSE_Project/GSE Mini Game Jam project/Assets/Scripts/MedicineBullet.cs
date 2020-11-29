@@ -5,7 +5,7 @@ using UnityEngine;
 public enum BulletType
 {
     Green = 0,
-    Yellow = 1,
+    Blue = 1,
     Red = 2
 }
 public class MedicineBullet : MonoBehaviour
@@ -34,14 +34,14 @@ public class MedicineBullet : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D hit)
     {
-         GameObject otherObj = hit.gameObject;
+        GameObject otherObj = hit.gameObject;
         Enemy patient = otherObj.GetComponent<Enemy>();
         if (patient)
         {
             Debug.Log("BUllet overlap with patient");
             bool actuallyHitSomething = patient.NotifyHitByBullet(this);
             if(actuallyHitSomething)
-            {
+            {          
                 Destroy(this.gameObject);
             }
         }
