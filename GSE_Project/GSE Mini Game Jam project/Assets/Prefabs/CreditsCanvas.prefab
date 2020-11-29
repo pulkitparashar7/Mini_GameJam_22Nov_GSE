@@ -408,7 +408,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Composer & SFX\nBenjamin Joseph Hanu\xDFek\r\n\r\nMenu development\nTom
-    Tu\u010Dek\r\n\n<fill in later>\nMu'taz Alshaer\n\r\nSpecial thanks\nSebastian
+    Tu\u010Dek\r\n\nMoral support\nMu'taz Alshaer\n\r\nSpecial thanks\nSebastian
     Kurz\r\nYou, the player"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
