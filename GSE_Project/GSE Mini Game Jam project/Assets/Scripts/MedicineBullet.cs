@@ -39,7 +39,6 @@ public class MedicineBullet : MonoBehaviour
         Enemy patient = otherObj.GetComponent<Enemy>();
         if (patient)
         {
-            Debug.Log("BUllet overlap with patient");
             bool actuallyHitSomething = patient.NotifyHitByBullet(this);
             if(actuallyHitSomething)
             {          
