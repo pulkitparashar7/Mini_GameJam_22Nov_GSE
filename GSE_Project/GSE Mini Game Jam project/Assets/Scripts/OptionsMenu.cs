@@ -2,13 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Audio;
 
 public class OptionsMenu : MonoBehaviour
 {
-    public AudioMixer audioMixer;
     public TMPro.TMP_Dropdown resolutionDropdown;
-    public Slider volumeSlider;
 
     Resolution[] resolutions;
 
@@ -34,11 +31,6 @@ public class OptionsMenu : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
-
-        float vol = 0;
-        audioMixer.GetFloat("Volume", out vol);
-        volumeSlider.value = vol;
-
     }
 
     public void SetResolution(int resolutionIndex)
@@ -50,8 +42,6 @@ public class OptionsMenu : MonoBehaviour
     public void setVolume(float volume)
     {
         Debug.Log("new volume " + volume);
-        audioMixer.SetFloat("Volume", volume);
-
     }
 
     public void setFullscreen(bool isFullscreen)
