@@ -92,6 +92,7 @@ MonoBehaviour:
   EnemyType: 0
   MySpeed: 0
   NoPillNeeded: 1
+  MoveSpeedMultiplier: 2
   MovementDelay: 0
 --- !u!61 &83580893003559685
 BoxCollider2D:

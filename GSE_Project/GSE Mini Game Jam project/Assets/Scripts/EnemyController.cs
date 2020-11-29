@@ -5,7 +5,7 @@ using UnityEngine;
 public enum EnemyType
 {
     Green = 0,
-    Yellow = 1,
+    Blue = 1,
     Red = 2
 
 }
@@ -19,7 +19,7 @@ public class EnemyController : MonoBehaviour
 
     public Vector2 MovementDelay;
     public float GreenPatientSpeed;
-    public float YellowPatientSpeed;
+    public float BluePatientSpeed;
     public float RedPatientSpeed;
 
     // Start is called before the first frame update
@@ -52,7 +52,7 @@ public class EnemyController : MonoBehaviour
         if (SpawnPatient == 0)
             enemy.Initialize(EnemyType.Green, -GreenPatientSpeed);
         else if (SpawnPatient == 1)
-            enemy.Initialize(EnemyType.Yellow, -YellowPatientSpeed);
+            enemy.Initialize(EnemyType.Blue, -BluePatientSpeed);
         else if (SpawnPatient == 2)
             enemy.Initialize(EnemyType.Red, -RedPatientSpeed);
         

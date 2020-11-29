@@ -626,6 +626,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1986182931}
     m_Modifications:
+    - target: {fileID: 1851261153512730000, guid: 2dde1802f2a367443a27034b23644480,
+        type: 3}
+      propertyPath: MedicineBulletType
+      value: 
+      objectReference: {fileID: 1730474088801044108, guid: 42e02d9e91f02464eabf3dfd126cd4d1,
+        type: 3}
     - target: {fileID: 1851261153512730003, guid: 2dde1802f2a367443a27034b23644480,
         type: 3}
       propertyPath: m_Color.r
@@ -856,6 +862,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1986182931}
     m_Modifications:
+    - target: {fileID: 1851261153512730000, guid: 2dde1802f2a367443a27034b23644480,
+        type: 3}
+      propertyPath: MedicineBulletType
+      value: 
+      objectReference: {fileID: 8514804530125025083, guid: 7d9f00c177f723749a04301021e22659,
+        type: 3}
     - target: {fileID: 1851261153512730003, guid: 2dde1802f2a367443a27034b23644480,
         type: 3}
       propertyPath: m_Color.r
@@ -1003,7 +1015,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NearbyDispenser: {fileID: 0}
   EquippedMedicine: {fileID: 0}
-  BulletSpeed: 0
   Doc: {fileID: 236420574}
 --- !u!224 &1986182931 stripped
 RectTransform:
@@ -1178,6 +1189,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1986182931}
     m_Modifications:
+    - target: {fileID: 1851261153512730000, guid: 2dde1802f2a367443a27034b23644480,
+        type: 3}
+      propertyPath: MedicineBulletType
+      value: 
+      objectReference: {fileID: 6306622496723555824, guid: 79ea440669aa5be4cb6a3c4d3748916a,
+        type: 3}
     - target: {fileID: 1851261153512730004, guid: 2dde1802f2a367443a27034b23644480,
         type: 3}
       propertyPath: m_LocalPosition.x
