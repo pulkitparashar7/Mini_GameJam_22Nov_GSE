@@ -67,6 +67,8 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 GSE_Project/GSE Mini Game Jam project/Library/*
 GSE_Project/GSE Mini Game Jam project/Temp/*
+GSE Mini Game Jam project/Temp/*
+GSE Mini Game Jam project/Library/*
 *.log
 
 *.cache
