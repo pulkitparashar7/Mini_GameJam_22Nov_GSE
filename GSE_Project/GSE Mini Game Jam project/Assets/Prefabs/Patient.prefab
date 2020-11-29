@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 83580893003559685}
   - component: {fileID: 4236140817955918397}
   - component: {fileID: 5630989210012838015}
+  - component: {fileID: -2945702781198658624}
   m_Layer: 5
   m_Name: Patient
   m_TagString: Enemy
@@ -162,3 +163,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-2945702781198658624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6323923369417407982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9e41b21ee75ae4a9a8974108e084f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovementSpeed: 100
+  rb: {fileID: 0}
+  medicine: {fileID: 0}
+  doc: {fileID: 0}
+  med1: {fileID: 0}
+  med2: {fileID: 0}
+  med3: {fileID: 0}

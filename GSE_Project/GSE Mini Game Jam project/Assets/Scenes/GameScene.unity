@@ -1030,6 +1030,10 @@ PrefabInstance:
       propertyPath: RedPatientSpeed
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 736646568, guid: e0457f71046e48d4984955ac3f96cab5, type: 3}
+      propertyPath: BluePatientSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 682994287061019049, guid: e0457f71046e48d4984955ac3f96cab5,
         type: 3}
       propertyPath: m_LocalPosition.x

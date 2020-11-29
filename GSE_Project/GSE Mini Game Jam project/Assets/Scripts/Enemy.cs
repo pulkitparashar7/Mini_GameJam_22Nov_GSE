@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    Movement MovementComponent;
     public EnemyType EnemyType;
     public float MySpeed;
     public int NoPillNeeded = 1;
@@ -19,13 +20,14 @@ public class Enemy : MonoBehaviour
     {
         MyImage = GetComponent<Image>();
         MyRectTransform = GetComponent<RectTransform>();
+        MovementComponent = GetComponent<Movement>();
     }
 
     public void Initialize(EnemyType type, float speed)
     {
         EnemyType = type;
         MySpeed = speed;
-        InvokeRepeating("MoveEnemy", MovementDelay / 2, MovementDelay);
+        //InvokeRepeating("MoveEnemy", MovementDelay / 2, MovementDelay);
 
         switch(type)
         {
@@ -43,13 +45,13 @@ public class Enemy : MonoBehaviour
 
     void MoveEnemy()
     {
-        MyRectTransform.anchoredPosition = new Vector2(MyRectTransform.anchoredPosition.x + MySpeed, 0);
+       // MyRectTransform.anchoredPosition = new Vector2(MyRectTransform.anchoredPosition.x + MySpeed, 0);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        this.MovementComponent.ApplyMovement(new Vector2(MySpeed * Time.deltaTime, 0));
     }
     public bool NotifyHitByBullet(MedicineBullet bullet)
     {
