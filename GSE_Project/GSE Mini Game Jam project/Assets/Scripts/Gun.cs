@@ -24,16 +24,9 @@ public class Gun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            this.TryToReload();
-        }
-        if (Input.GetMouseButtonDown(0))
-        {
-            this.Fire();
-        }
+       
     }
-    void Fire()
+    public void Fire()
     {
         if (this.AmmoCount <= 0)
         {

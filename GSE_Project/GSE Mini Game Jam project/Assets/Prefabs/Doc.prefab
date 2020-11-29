@@ -270,7 +270,6 @@ GameObject:
   - component: {fileID: 7565642269966270772}
   - component: {fileID: -3223463131658895468}
   - component: {fileID: 2530547353206258210}
-  - component: {fileID: 1959563086}
   - component: {fileID: 1000295548435737645}
   - component: {fileID: -5007598534722682968}
   m_Layer: 5
@@ -353,13 +352,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f9e41b21ee75ae4a9a8974108e084f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementSpeed: 100
-  medicine: {fileID: 3089627324862496777, guid: d5e5b339f05108b4ebe9090da1b65c3b,
-    type: 3}
-  doc: {fileID: 236420574}
-  med1: {fileID: 0}
-  med2: {fileID: 0}
-  med3: {fileID: 0}
+  MovementSpeed: 500
+  rb: {fileID: 0}
 --- !u!50 &7565642269966270772
 Rigidbody2D:
   serializedVersion: 4
@@ -426,21 +420,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1959563086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7565642269966270774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b7d4da1e9b572a499036fea847776bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NearbyDispenser: {fileID: 0}
-  EquippedMedicine: {fileID: 0}
-  Doc: {fileID: 0}
 --- !u!114 &1000295548435737645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,3 +447,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cdbeedd261cf304b9bb43e6e690682f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Movement: {fileID: 0}
